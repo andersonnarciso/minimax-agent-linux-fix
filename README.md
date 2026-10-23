@@ -98,8 +98,8 @@ entirely and extracts the payload with `dpkg-deb -x`, which needs no root.
 ## Install
 
 ```bash
-git clone https://github.com/andersonnarciso/minimax-agent-linux-installer.git
-cd minimax-agent-linux-installer
+git clone https://github.com/andersonnarciso/minimax-agent-linux-fix.git
+cd minimax-agent-linux-fix
 bash install.sh
 ```
 
