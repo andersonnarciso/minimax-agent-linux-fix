@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# MiniMax Agent for Linux — rootless install of the community port WITH the
+# MiniMax Agent for Linux: rootless install of the community port WITH the
 # upstream fixes (asar unpacked + native sqlite shim + daemon deps + user service).
 #
 # Usage:  bash install.sh
@@ -105,7 +105,7 @@ DAEMON_DIR="$APP_DIR/resources/resources/daemon"
 say "7/8 launcher, desktop entry and icons"
 cat > "$BIN_DIR/minimax-agent" <<EOF
 #!/bin/bash
-# MiniMax Agent (community Linux port + fixes) — rootless launcher
+# MiniMax Agent (community Linux port + fixes): rootless launcher
 APP_DIR="\${APP_DIR:-$APP_DIR}"
 export LD_LIBRARY_PATH="\${APP_DIR}:\${LD_LIBRARY_PATH}"
 export ELECTRON_DISABLE_SECURITY_WARNINGS=1
@@ -173,7 +173,7 @@ if [ "$NO_SERVICE" != "1" ]; then
   [ -e "$HOME/.minimax" ] && [ ! -e "$HOME/.mavis" ] && ln -s "$HOME/.minimax" "$HOME/.mavis"
   cat > "$MAVIS_BIN/daemon-launcher.sh" <<EOF
 #!/bin/bash
-# Mavis Daemon Launcher — resolves Node.js dynamically for system services
+# Mavis Daemon Launcher: resolves Node.js dynamically for system services
 export NVM_DIR="\${NVM_DIR:-\$HOME/.nvm}"
 [ -s "\$NVM_DIR/nvm.sh" ] && . "\$NVM_DIR/nvm.sh" 2>/dev/null
 for dir in "\$HOME/.local/bin" /usr/local/bin /usr/bin; do

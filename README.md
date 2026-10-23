@@ -1,7 +1,7 @@
 # MiniMax Agent for Linux (rootless installer + runtime fixes)
 
 Unofficial Linux installer for **MiniMax Agent** (the MiniMax coding/agent desktop app).
-MiniMax ships Windows and macOS only — there is no official Linux build.
+MiniMax ships Windows and macOS only. There is no official Linux build.
 
 This repo is **not** a fork of the app source. It is a self-contained installer that:
 
@@ -99,9 +99,9 @@ User data lives in `~/.minimax` (with `~/.mavis` symlinked to it) and
 
 ## Known issues (upstream, not fixable here)
 
-- `mcode-tools development resource preparation failed` — dev-only resources that
+- `mcode-tools development resource preparation failed`: dev-only resources that
   are not part of the port.
-- `Cannot resolve @mavis/opencode-plugin` / `@mavis/opencode-skill-tool` — private
+- `Cannot resolve @mavis/opencode-plugin` / `@mavis/opencode-skill-tool`: private
   MiniMax packages, absent from npm and from the `.asar`. Affects the `mavis`
   agent only, not the daemon itself.
 - The daemon writes `~/.minimax/permission.json` in a schema the daemon then
