@@ -56,8 +56,8 @@ daemon then dies with `MODULE_NOT_FOUND` for `better-sqlite3` and
 ## Install
 
 ```bash
-git clone https://github.com/andersonnarciso/minimax-agent-linux-fix.git
-cd minimax-agent-linux-fix
+git clone https://github.com/andersonnarciso/minimax-agent-linux-installer.git
+cd minimax-agent-linux-installer
 bash install.sh
 ```
 
